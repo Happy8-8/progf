@@ -16,12 +16,16 @@ The dish may also contain shrimp or prawns. It is traditionally eaten with plant
 
 
 <% @foods.each do |food| %>
-  <div>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= link_to food.name, food_path(food) %></h1><br />
     <h1><%= food.name %></h1><br />
     <p><%= food.description %></p><br />
+
+    <% if food.user.present? %>
+      <small><%= food.user.email %></small>
+    <% end %>
   </div>
 
-  <hr />
 <% end %>
 
 

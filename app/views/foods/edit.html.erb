@@ -1,9 +1,9 @@
 <div class="booyah-box col-10 offset-1">
-  <h1>Enter Your Food Details</h1>
+  <h1>Edit Your Food</h1>
   <%= simple_form_for @food do |f| %>
     <%= f.input :name %>
     <%= f.input :description %>
     <br />
-    <%= f.submit 'Create', class: 'btn btn-primary' %>
+    <%= f.submit 'Update', class: 'btn btn-primary' %>
   <% end %>
 </div>
