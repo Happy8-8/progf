@@ -1,0 +1,31 @@
+
+
+
+<h1> About this page </h1>
+<br/>
+<p>West African cuisine encompasses a diverse range of foods that are split between its 16 countries. In West Africa, many families grow and raise their own food, and within each there is a division of labor. Indigenous foods consist of a number of plant species and animals, and are important to those whose lifestyle depends on farming and hunting.
+The history of West Africa also plays a large role in their cuisine and recipes, as interactions with different cultures (particularly the Arab world and later Europeans) over the centuries have introduced many ingredients that would go on to become key components of the various national cuisines today. 
+</p>
+<br/>
+<h2> My favorite West African meal.</h2>
+<br/>
+<p>Ndolé is a Cameroonian dish consisting of stewed nuts, ndoleh (bitter leaves indigenous to West Africa) and fish or beef.
+The dish may also contain shrimp or prawns. It is traditionally eaten with plantain, bobolo (a Cameroonian dish made of fermented ground manioc or cassava and wrapped in leaves), etc.
+</p>
+<br/>
+
+
+<% @foods.each do |food| %>
+  <div>
+    <h1><%= food.name %></h1><br />
+    <p><%= food.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
+
+
+
+
+<br/>
+<p>© <%= Date.today.year %> Progf.</p>
